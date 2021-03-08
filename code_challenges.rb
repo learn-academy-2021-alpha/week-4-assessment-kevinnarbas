@@ -68,7 +68,8 @@ class Bike
   end
 
   def get_info
-    puts "The #{model} bike has #{wheels} wheels and is going #{current_speed} mph."
+    # puts "The #{model} bike has #{wheels} wheels and is going #{current_speed} mph."
+    puts "The #@model bike has #@wheels wheels and is going #@current_speed mph."
   end
 
   def pedal_faster

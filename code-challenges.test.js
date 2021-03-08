@@ -1,6 +1,6 @@
 // ASSESSMENT 4: JavaScript Coding Practical Questions with Jest
 
-const { test } = require("picomatch")
+// const { test } = require("picomatch")
 
 // const { describe } = require("yargs")
 
@@ -63,17 +63,18 @@ global.Math = mockMath;
 
 // ** returns blue as undefined ** returning later
 // const remAndShuff = (array) => {
-//   array.shift()
-//   console.log('this',array)
-//   return [...array].map((value, index, arrayCopy) => {
+//   let newArray = array.slice(1, array.length)
+//   // console.log('this',array)
+//   return newArray.map((value, index, arrayCopy) => {
 //     let random = index + (Math.floor(Math.random() * arrayCopy.length - 1));
 //     [arrayCopy[random], arrayCopy[index]] = [arrayCopy[index], arrayCopy[random]]
-//     console.log(arrayCopy[index])
+//     // console.log('random', random, 'index', index)
+//     // console.log(arrayCopy, index)
 //     return arrayCopy[index]
 //   })
 // }
 // console.log(remAndShuff(colors1))
-
+// console.log(Math.random())
 
 // const remAndShuff = (array) => {
 //   let newArray = array.slice(1, array.length)
@@ -135,10 +136,14 @@ describe('When cubedSum is called', () => {
 
 // b) Create the function that makes the test pass.
 
+// const cubedSum = (arrayOfNumbers) => {
+//   return arrayOfNumbers.map(value => {
+//     return Math.pow(value,3)
+//   }).reduce((total, num) => total + num)
+// }
+
 const cubedSum = (arrayOfNumbers) => {
-  return arrayOfNumbers.map(value => {
-    return Math.pow(value,3)
-  }).reduce((total, num) => total + num)
+  return arrayOfNumbers.map(value => Math.pow(value,3)).reduce((total, num) => total + num)
 }
 
 // const cubedSum = (arrayOfNumbers) => {
