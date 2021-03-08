@@ -209,7 +209,7 @@ var testString2 = "jabberwocky"
 // Expected output: "jAbBeRwOcKy"
 
 describe('When everyOther is called', () => {
-  it('returns the lowest and highest number when an array is passed', () => {
+  it('returns the every other letter capitalized when a string is passed', () => {
     // Arrange 
     const string = "albatross"
 
@@ -220,7 +220,7 @@ describe('When everyOther is called', () => {
     expect(actualResult).toEqual("aLbAtRoSs")
   })
   
-  it('returns the lowest and highest number when an array is passed', () => {
+  it('returns the every other letter capitalized when a string is passed', () => {
     // Arrange 
     const string = "jabberwocky"
 
@@ -252,7 +252,7 @@ var testArray2 = [7, 8, 2, 3, 1, 5, 4]
 // Expected output: [3, 7, 10, 5, 4, 8, 2, 1]
 
 describe('When combineArrays is called', () => {
-  it('returns the lowest and highest number when an array is passed', () => {
+  it('returns the arrays combined with no numbers repeated', () => {
     // Arrange 
     const testArray1 = [3, 7, 10, 5, 4, 3, 3]
     const testArray2 = [7, 8, 2, 3, 1, 5, 4]
